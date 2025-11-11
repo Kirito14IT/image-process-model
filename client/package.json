@@ -1,0 +1,39 @@
+{
+  "name": "stegacam-client",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "start:go": "expo start --go",
+    "android": "expo start --dev-client --android",
+    "ios": "expo start --dev-client --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.6.1",
+    "@react-navigation/native": "^6.1.18",
+    "@types/uuid": "^9.0.8",
+    "expo": "^54.0.23",
+    "expo-camera": "~17.0.9",
+    "expo-dev-client": "~6.0.17",
+    "expo-file-system": "~19.0.17",
+    "expo-image-picker": "~17.0.8",
+    "expo-media-library": "~18.2.0",
+    "expo-secure-store": "~15.0.7",
+    "expo-status-bar": "~3.0.8",
+    "expo-updates": "~29.0.12",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-get-random-values": "~1.11.0",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~19.1.10",
+    "babel-preset-expo": "~54.0.0",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}

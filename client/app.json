@@ -1,0 +1,93 @@
+{
+  "expo": {
+    "name": "StegaCam",
+    "slug": "stegacam",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stegacam.app",
+      "scheme": "stegacam",
+      "infoPlist": {
+        "NSCameraUsageDescription": "需要访问相机以拍摄照片并添加水印",
+        "NSPhotoLibraryUsageDescription": "需要访问相册以选择图片进行解码",
+        "NSPhotoLibraryAddUsageDescription": "需要保存处理后的图片到相册"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.stegacam.app",
+      "scheme": "stegacam",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      "./plugins/withCleartextTraffic.js",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "允许访问相机以拍摄照片"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "允许访问相册以选择图片",
+          "savePhotosPermission": "允许保存图片到相册"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "允许访问相册以选择图片"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "15917a68-62df-4e8d-9530-825aa0894a4e"
+      }
+    },
+    "owner": "qiu-sheng",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/15917a68-62df-4e8d-9530-825aa0894a4e"
+    }
+  }
+}
